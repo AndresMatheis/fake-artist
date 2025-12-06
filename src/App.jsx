@@ -60,6 +60,18 @@ function App() {
       {gameState === 'PLAYING' && (
         <GameScreen players={players} onReset={handleReset} wordSource={wordSource} />
       )}
+
+      <footer style={{
+        marginTop: '40px',
+        padding: '20px',
+        fontSize: '0.75rem',
+        opacity: 0.6,
+        textAlign: 'center',
+        borderTop: '1px solid rgba(255,255,255,0.1)'
+      }}>
+        <p>Unofficial Helper for "Hidden Artist" style games.</p>
+        <p>Not affiliated with Oink Games Inc. "A Fake Artist Goes to New York" is a trademark of Oink Games.</p>
+      </footer>
     </div>
   );
 }
